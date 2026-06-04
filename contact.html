@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | CJE Digital</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="logo">CJE Digital</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="nav-button">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-section contact-section">
+      <div>
+        <p class="eyebrow">Free website review</p>
+        <h1>Let’s talk about your website.</h1>
+        <p>
+          Tell us about your business and what you need help with.
+          We’ll take a look and show you what we would improve.
+        </p>
+        <p>
+          Email: cjedigitalsolutions@gmail.com
+        </p>
+      </div>
+
+      <form
+        class="contact-form"
+        action="https://formsubmit.co/cjedigitalsolutions@gmail.com"
+        method="POST"
+      >
+        <input type="hidden" name="_subject" value="New CJE Digital Lead" />
+        <input type="hidden" name="_captcha" value="false" />
+
+        <label>
+          Name
+          <input type="text" name="name" required />
+        </label>
+
+        <label>
+          Business Name
+          <input type="text" name="business" />
+        </label>
+
+        <label>
+          Email
+          <input type="email" name="email" required />
+        </label>
+
+        <label>
+          Phone
+          <input type="tel" name="phone" />
+        </label>
+
+        <label>
+          Tell us about your project
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+
+        <button type="submit" class="button primary">
+          Request My Free Website Review
+        </button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 CJE Digital | cjedigitalsolutions@gmail.com</p>
+  </footer>
+</body>
+</html>
