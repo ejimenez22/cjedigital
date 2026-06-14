@@ -77,8 +77,10 @@ nav a {
   color: var(--purple);
   font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 1.5px;
+  letter-spacing: 2px;
   font-size: 0.85rem;
+  text-align: center;
+  margin-bottom: 15px;
 }
 
 h1 {
@@ -167,28 +169,29 @@ h3 {
 }
 
 .page-section {
-  padding: 90px 8%;
+  padding: 120px 8%;
 }
 
-.two-column {
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 48px;
-  align-items: center;
+.about-page {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
 }
 
-.photo-placeholder {
-  min-height: 420px;
-  border-radius: 28px;
-  background:
-    linear-gradient(135deg, rgba(37, 99, 235, 0.18), rgba(239, 68, 68, 0.12), rgba(124, 58, 237, 0.18)),
-    #f1f1f1;
-  border: 2px dashed #cfcfcf;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.about-page h1 {
+  margin-bottom: 40px;
+}
+
+.about-page p {
+  max-width: 750px;
+  margin: 0 auto 30px;
+  font-size: 1.15rem;
   color: var(--gray);
-  font-weight: 800;
+  line-height: 1.9;
+}
+
+.about-cta {
+  margin-top: 50px;
 }
 
 .contact-section {
@@ -246,12 +249,11 @@ footer {
   }
 
   .service-grid,
-  .two-column,
   .contact-section {
     grid-template-columns: 1fr;
   }
 
-  .photo-placeholder {
-    min-height: 300px;
+  .page-section {
+    padding: 80px 8%;
   }
 }
